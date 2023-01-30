@@ -21,9 +21,8 @@ class ProjectSeeder extends Seeder
         Project::truncate();
 
         for( $i = 0; $i < 10; $i++ ) {
-            $type = Type::inRandomOrder()->first();
+            $type= Type::inRandomOrder()->first();
 
-        for( $i = 0; $i < 10; $i++ ) {
             $new_project = new Project();
             $new_project->title = $faker->sentence();
             $new_project->description = $faker->text(300);
@@ -34,4 +33,4 @@ class ProjectSeeder extends Seeder
         }
     }
 }
-}
+
