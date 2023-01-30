@@ -1,7 +1,6 @@
 @extends('layouts.admin')
 
 @section('content')
-    
     <table class="table table-striped table-inverse table-responsive">
         <thead>
             <tr>
